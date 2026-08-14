@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A simple gift for a my bestie">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Gift for the happy birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <P><b><i><h1>login page</h1></i></b></P>
+    <input id="username" type="text" placeholder="enter username">
+    <input id="password" type="password" placeholder="enter password">
+    <button onclick="login()">login</button>
+    
+    <script>
+        const vaildUsername = "honeyjesus";
+        const validPassword = "9014992390";
+        function login(){
+            var username=document.getElementById("username").value;
+            var password=document.getElementById("password").value;
+            if(username === vaildUsername && password === validPassword){
+                console.log("login");
+                window.location.href = "gift1.html";
+            }else{
+                console.log("invalid credentials");
+            }
+        }
+    </script>
+</body>
+</html>
